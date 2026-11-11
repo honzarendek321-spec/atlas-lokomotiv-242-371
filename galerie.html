@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Fotogalerie lokomotiv</title>
+    <link rel="stylesheet" href="styly.css">
+</head>
+<body>
+
+<header>
+    <h1>Fotogalerie lokomotiv</h1>
+    <p>Železniční atlas řad 242 a 371</p>
+</header>
+
+<nav>
+    <a href="index.html">Úvod</a>
+    <a href="lokomotiva-242.html">Řada 242</a>
+    <a href="lokomotiva-371.html">Řada 371</a>
+    <a href="porovnani.html">Porovnání</a>
+    <a href="galerie.html">Fotogalerie</a>
+</nav>
+
+<main>
+    <section class="card">
+        <h2>Fotografie lokomotiv</h2>
+        <p>
+            Kliknutím na fotografii
+            ji zobrazíte ve větší velikosti.
+        </p>
+
+<div class="filtry">
+    <button type="button" data-filtr="vse">
+        Všechny fotografie
+    </button>
+
+    <button type="button" data-filtr="242">
+        Lokomotivy 242
+    </button>
+
+    <button type="button" data-filtr="371">
+        Lokomotivy 371
+    </button>
+</div>
+
+        <div class="galerie">
+            <figure data-rada="242">
+                <img src="images/242.jpg"
+                     alt="Lokomotiva řady 242"
+                     class="galerie-obrazek">
+                <figcaption>
+                    Elektrická lokomotiva 242
+                </figcaption>
+            </figure>
+
+            <figure data-rada="371">
+                <img src="images/371.jpg"
+                     alt="Lokomotiva řady 371"
+                     class="galerie-obrazek">
+                <figcaption>
+                    Elektrická lokomotiva 371
+                </figcaption>
+            </figure>
+            <figure data-rada="242">
+    <img src="images/242-2.jpg"
+         alt="Další fotografie lokomotivy 242"
+         class="galerie-obrazek">
+    <figcaption>
+        Lokomotiva 242 – další fotografie
+    </figcaption>
+</figure>
+<figure data-rada="371">
+    <img src="images/371-2.jpg"
+         alt="Další fotografie lokomotivy 371"
+         class="galerie-obrazek">
+    <figcaption>Lokomotiva 371 – další fotografie</figcaption>
+</figure>
+        </div>
+    </section>
+</main>
+
+<div id="nahled" class="nahled" role="dialog"
+     aria-modal="true" aria-label="Náhled fotografie"
+     hidden>
+    <button id="zavrit" type="button"
+            aria-label="Zavřít fotografii">×</button>
+    <img id="velky-obrazek" alt="">
+</div>
+
+<footer>
+    <p>Školní projekt – Lokomotivy 242 a 371</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
